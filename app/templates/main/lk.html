@@ -1,0 +1,177 @@
+{% extends 'layouts/base.html' %} {% load static %}
+
+{% block header %}
+    <h1 class="header__title">Личный кабинет</h1>
+    <div class="header__right">
+                            <div class="header__lang">
+                                <select class="select">
+                                    <option>RUS</option>
+                                    <option>ENG</option>
+                                    <option>ESP</option>
+                                </select>
+                            </div>
+                            <a href="" class="header__lk">
+                                <img src="{% static 'img/user.png' %}" alt="">
+                            </a>
+                            <button class="header__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                </div>
+{% endblock %}
+
+{% block content %}
+    <section class="lk">
+        <div class="container">
+            <div class="lk__inner">
+                <div class="lk__main">
+                    <h2 class="lk__main-title">Мои данные</h2>
+                    <form class="lk__form">
+                        <div class="lk__form-grid">
+                            <div class="lk__form-group">
+                                <input type="text" placeholder="Ваш ник">
+                            </div>
+                            <div class="lk__form-group">
+                                <input type="text" placeholder="Логин">
+                            </div>
+                            <div class="lk__form-group">
+                                <input type="text" placeholder="Почта">
+                            </div>
+                            <div class="lk__form-group">
+                                <input class="lk__ lk__password" type="text" placeholder="Пароль">
+                            </div>
+                            <div class="lk__form-group">
+                                <input class="lk__ lk__password" type="text" placeholder="Повторите пароль">
+                            </div>
+                            <div>
+                                <button class="btn btn-green lk__form-btn">Сохранить</button>
+                            </div>
+                        </div>
+                        <div class="lk__desc">
+                            <p class="lk__text"> Для возможности доната нашим стримерам необходимо активировать карту в системе. С Вашей карты спишется 1 рубль и она будет сохранена в системе. Подтверждение картыпроходит один раз. </p>
+                            <p class="lk__text">Так же необходимо подтвердить для безопасности Ваших данных:</p>
+                        </div>
+                        <div class="lk__items">
+                            <div class="lk__item">
+                                <input type="checkbox" id="view1" class="lk__radio " checked/>
+                                <label class="lk__label " for="view1">Информация о согласии на обработку персональных данных</label>
+                            </div>
+                            <div class="lk__item">
+                                <input type="checkbox" id="view2" class="lk__radio " checked/>
+                                <label class="lk__label " for="view2">Политика безопасности платежей</label>
+                            </div>
+                            <div class="lk__item">
+                                <input type="checkbox" id="view3" class="lk__radio " checked/>
+                                <label class="lk__label " for="view3">Публичная оферта сайта</label>
+                            </div>
+                        </div>
+                        <div class="lk__item-img">
+                            <img class="lk__img" src="{% static 'img/card.png' %}" alt="">
+                        </div>
+                        <div>
+                            <button class="btn btn-green lk__btn">Ввести данные карты</button>
+                        </div>
+                        <div class="lk__desc lk__desc-two">
+                            <p>Оплата осуществляется банковскими картами через АО КИВИ Банк ЦБ РФ № 2241. К оплате принимаются карты VISA, MasterCard, МИР. Комиссия за перевод 30%.</p>
+                        </div>
+                    </form>
+
+                    <div class="lk__stream">
+                        <div class="lk__stream-title">Мои запланированные трансляции</div>
+                        <div class='all-stream__items'>
+                            <div class="all-stream__item">
+                                <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                            </div>
+                            <div class="all-stream__item">
+                                <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                            </div>
+                            <div class="all-stream__item">
+                                <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                            </div>
+                            <div class="all-stream__item">
+                                <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                            </div>
+                        </div>
+
+                        <div class="pagination">
+                            <a href="" class="pagination__item">1</a>
+                            <a href="" class="pagination__item">2</a>
+                            <a href="" class="pagination__item">3</a>
+                            <a href="" class="pagination__item">4</a>
+                            <a href="" class="pagination__item">5</a>
+                            <a href="" class="pagination__item">6</a>
+                            <a href="" class="pagination__item">7</a>
+                            <a href="" class="pagination__item">8</a>
+                            <a href="" class="pagination__item">9</a>
+                            <a href="" class="pagination__item">Далее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lk__sidebar">
+                    <a class="lk__link lk__link-bold" href="">User 0001</a>
+                    <a class="lk__link" href="">Все трансляции</a>
+                    <a class="lk__link" href="">Запланированные трансляции</a>
+                    <a class="lk__link lk__link--active" href="">Личный кабинет</a>
+                    <a href="" class="lk__link-item">
+                        <span href="">Выход</span>
+                        <img src="{% static 'img/vykhod.png' %}" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

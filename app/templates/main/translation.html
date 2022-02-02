@@ -1,0 +1,68 @@
+{% extends 'layouts/base.html' %} {% load static %}
+
+{% block header %}
+    <h1 class="header__title">Название трансляции</h1>
+    <div class="header__right">
+                            <div class="header__lang">
+                                <select class="select">
+                                    <option>RUS</option>
+                                    <option>ENG</option>
+                                    <option>ESP</option>
+                                </select>
+                            </div>
+                            <a href="" class="header__lk">
+                                <img src="img/user.png" alt="">
+                            </a>
+                            <button class="header__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+{% endblock %}
+
+{% block content %}
+    <section class="lk">
+        <div class="container">
+            <div class="lk__inner">
+                <div class="lk__main">
+                    <h2 class="lk__main-title">Имя автора трансляции</h2>
+
+                    <div class="translation">
+                        <div class="translation__top">
+                            <img src="{% static 'img/card2.png' %}" alt="">
+                            <button class="translation__play">
+                                <img src="{% static 'img/play.png' %}" alt="">
+                            </button>
+                        </div>
+                        <div class="translation__info">
+                            <div class="translation__title">
+                                <strong>Название видео</strong>
+                            </div>
+                            <div class="translation__sum">
+                                <strong>Уже перевели:</strong> 156 782 рублей
+                            </div>
+                        </div>
+                        <div class="translation__nav">
+                            <div class="lk__form-group">
+                                <input type="text" placeholder="Введите сумму">
+                            </div>
+                            <button class="translation__btn btn btn-green">Перевести автору видео</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lk__sidebar">
+                    <a class="lk__link lk__link-bold" href="">User 0001</a>
+                    <a class="lk__link" href="">Все трансляции</a>
+                    <a class="lk__link" href="">Запланированные трансляции</a>
+                    <a class="lk__link lk__link--active" href="">Личный кабинет</a>
+                    <a href="" class="lk__link-item">
+                        <span href="">Выход</span>
+                        <img src="{% static 'img/vykhod.png' %}" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

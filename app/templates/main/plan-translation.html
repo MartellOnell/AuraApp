@@ -1,0 +1,267 @@
+{% extends 'layouts/base.html' %} {% load static %}
+
+{% block header %}
+    <h1 class="header__title">Запланированные трансляции</h1>
+    <div class="header__right">
+        <div class="header__lang">
+            <select class="select">
+                <option>RUS</option>
+                <option>ENG</option>
+                <option>ESP</option>
+            </select>
+        </div>
+        <a href="" class="header__lk">
+            <img src="{% static 'img/user.png' %}" alt="">
+        </a>
+        <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+</div>
+{% endblock %}
+
+{% block content %}
+    <section class="lk">
+        <div class="container">
+            <div class="lk__inner">
+                <div class="lk__main">
+                    <div class="all-stream__tabs">
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide all-stream__tab all-stream__tab--active'>Все стримы</div>
+                                <div class='swiper-slide all-stream__tab'>Детям</div>
+                                <div class='swiper-slide all-stream__tab'>Помощь пенсионерам</div>
+                                <div class='swiper-slide all-stream__tab'>Помощь ветеранам</div>
+                                <div class='swiper-slide all-stream__tab'>Помощь малоимущим</div>
+                                <div class='swiper-slide all-stream__tab'>Помощь людям с ограниченными возможностями</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lk__stream">
+                        <div class='all-stream__items'>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                            <div class="all-stream__item">
+                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                    </div>
+                        </div>
+
+                        <div class="pagination">
+                            <a href="" class="pagination__item">1</a>
+                            <a href="" class="pagination__item">2</a>
+                            <a href="" class="pagination__item">3</a>
+                            <a href="" class="pagination__item">4</a>
+                            <a href="" class="pagination__item">5</a>
+                            <a href="" class="pagination__item">6</a>
+                            <a href="" class="pagination__item">7</a>
+                            <a href="" class="pagination__item">8</a>
+                            <a href="" class="pagination__item">9</a>
+                            <a href="" class="pagination__item">Далее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lk__sidebar">
+                    <a class="lk__link lk__link-bold" href="">User 0001</a>
+                    <a class="lk__link" href="">Все трансляции</a>
+                    <a class="lk__link lk__link--active" href="">Запланированные трансляции</a>
+                    <a class="lk__link" href="">Личный кабинет</a>
+                    <a href="" class="lk__link-item">
+                        <span href="">Выход</span>
+                        <img src="{% static 'img/vykhod.png' %}" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

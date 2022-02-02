@@ -1,0 +1,263 @@
+{% extends 'layouts/base.html' %} {% load static %}
+
+{% block header %}
+    <h1 class="header__title">Создание трансляции</h1>
+    <div class="header__right">
+                <div class="header__lang">
+                    <select class="select">
+                        <option>RUS</option>
+                        <option>ENG</option>
+                        <option>ESP</option>
+                    </select>
+                </div>
+                <a href="" class="header__lk">
+                    <img src="img/user.png" alt="">
+                </a>
+                <button class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+</div>
+{% endblock %}
+
+{% block content %}
+
+    <section class="lk">
+        <div class="container">
+            <div class="lk__inner">
+                <div class="lk__main">
+                    <h2 class="lk__main-title">Создайте трансляцию</h2>
+                    <form class="lk__form">
+                        <div class="lk__form-grid">
+                            <div class="lk__form-group">
+                                <input type="text" placeholder="введите название трансляции">
+                            </div>
+                            <div class="lk__form-group">
+                                <select class="select">
+                                    <option selected hidden>Выберете страну трансляции</option>
+                                    <option>Выберете страну трансляции</option>
+                                </select>
+                            </div>
+                            <div class="lk__form-group">
+                                <select class="select">
+                                    <option selected hidden>Выберете категорию трансляции</option>
+                                    <option>Выберете категорию трансляции</option>
+                                </select>
+                            </div>
+                            <div class="lk__form-group">
+                                <input class="lk__ lk__password" type="date" placeholder="Выберете дату трансляции">
+                            </div>
+                            <div class="lk__form-group">
+                                <input class="lk__ lk__password" type="time" placeholder="Выберете время трансляции">
+                            </div>
+                            <div>
+                                <button class="btn btn-green lk__form-btn">Сохранить</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="lk__stream">
+                        <div class="lk__stream-title">Мои запланированные трансляции</div>
+                        <div class="lk__stream-slider slider1">
+                            <div class='swiper-container'>
+                                <div class='swiper-wrapper'>
+                                    <div class='swiper-slide'>
+                                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                                    </div>
+                                    <div class='swiper-slide'>
+                                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                                    </div>
+                                    <div class='swiper-slide'>
+                                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                                    </div>
+                                    <div class='swiper-slide'>
+                                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                                    </div>
+                                    <div class='swiper-slide'>
+                                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class='swiper-button-next'>
+                                <img src="{% static 'img/slider_arrow.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lk__stream">
+                        <div class="lk__stream-title">Прошедшие трансляции</div>
+                        <div class="lk__stream-slider slider2">
+                           <div class='swiper-container'>
+                                <div class='swiper-wrapper'>
+                                    <div class='swiper-slide'>
+                                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                                    </div>
+                                    <div class='swiper-slide'>
+                                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                                    </div>
+                                    <div class='swiper-slide'>
+                                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                                    </div>
+                                    <div class='swiper-slide'>
+                                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                                    </div>
+                                    <div class='swiper-slide'>
+                                        <div class="card">
+                            <div class="card__top">
+                                <img src="{% static 'img/card.jpg' %}" alt="">
+                                <button class="card__btn">
+                                    <img src="{% static 'img/play.png' %}" alt="">
+                                </button>
+                            </div>
+                            <div class="card__info">
+                                <div class="card__author">Автор</div>
+                                <div class="card__price">156 398 р.</div>
+                            </div>
+                            <div class="card__subtitle">Помощь детям</div>
+                            <div class="card__title truncate">Название видео</div>
+                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class='swiper-button-next'>
+                                <img src="{% static 'img/slider_arrow.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lk__sidebar">
+                    <a class="lk__link lk__link-bold" href="">User 0001</a>
+                    <a class="lk__link" href="">Все трансляции</a>
+                    <a class="lk__link" href="">Запланированные трансляции</a>
+                    <a class="lk__link lk__link--active" href="">Личный кабинет</a>
+                    <a href="" class="lk__link-item">
+                        <span href="">Выход</span>
+                        <img src="{% static 'img/vykhod.png' %}" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
