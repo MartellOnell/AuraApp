@@ -1,0 +1,83 @@
+.all-stream {
+  padding: 25px 0 60px;
+  position: relative; }
+  .all-stream__top {
+    display: flex;
+    align-items: center; }
+    .all-stream__top-select {
+      width: 210px;
+      margin-right: 15px; }
+      .all-stream__top-select--150 {
+        width: 150px; }
+      .all-stream__top-select .select {
+        height: 37px; }
+      @media screen and (max-width: 768px) {
+        .all-stream__top-select {
+          margin: 10px 0 0 0; } }
+    @media screen and (max-width: 768px) {
+      .all-stream__top {
+        flex-direction: column-reverse;
+        align-items: flex-start; } }
+  .all-stream__btn {
+    width: 292px;
+    height: 37px;
+    margin-left: 50px; }
+    @media screen and (max-width: 768px) {
+      .all-stream__btn {
+        margin-left: 0; } }
+  .all-stream__select {
+    width: 250px;
+    margin-right: 20px; }
+    .all-stream__select-block {
+      display: flex;
+      align-items: center;
+      margin-top: 15px; }
+    .all-stream__select-title {
+      font-size: 18px;
+      color: #000000;
+      margin-right: 20px; }
+  .all-stream__items {
+    display: grid;
+    grid-template-columns: calc(20% - 4px) calc(20% - 4px) calc(20% - 4px) calc(20% - 4px) calc(20% - 4px);
+    gap: 30px 6px;
+    margin-top: 28px; }
+    @media screen and (max-width: 1200px) {
+      .all-stream__items {
+        grid-template-columns: calc(25% - 4px) calc(25% - 4px) calc(25% - 4px) calc(25% - 4px);
+        row-gap: 25px; } }
+    @media screen and (max-width: 992px) {
+      .all-stream__items {
+        grid-template-columns: calc(33.33% - 4px) calc(33.33% - 4px) calc(33.33% - 4px); } }
+    @media screen and (max-width: 768px) {
+      .all-stream__items {
+        grid-template-columns: calc(50% - 4px) calc(50% - 4px); } }
+    @media screen and (max-width: 576px) {
+      .all-stream__items {
+        grid-template-columns: 100%; } }
+  .all-stream__tabs {
+    margin-top: 20px;
+    overflow: hidden; }
+    .all-stream__tabs .swiper-container {
+      padding-bottom: 5px; }
+  .all-stream__tab {
+    height: 33px;
+    border: 1px solid #37af62;
+    width: unset !important;
+    padding: 0 25px;
+    background-color: #eeeeee;
+    font-size: 14px;
+    font-weight: 300;
+    color: #151515;
+    border-radius: 8px;
+    display: flex;
+    align-items: center; }
+    .all-stream__tab--active {
+      background-image: linear-gradient(25deg, #349c49 25%, #3fb3d1 75%);
+      color: #ffffff; }
+
+@media screen and (max-width: 576px) {
+  .all-stream__select {
+    flex-grow: 1;
+    width: unset; } }
+
+/*# sourceMappingURL=stream.css.map */
