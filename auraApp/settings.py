@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
 INSTALLED_APPS = [
     'app',
     'users',
+    'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -117,17 +118,26 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+#assets
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'assets'),
 )
 
-#static
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_URL = '/staticroot/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticroot/')
+
+#statics collect
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_FINDERS = (
+ 
+'django.contrib.staticfiles.finders.FileSystemFinder',
+ 
+'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+ 
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
