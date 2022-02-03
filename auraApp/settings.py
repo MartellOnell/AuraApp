@@ -26,9 +26,7 @@ SECRET_KEY = 'django-insecure-th%*wv1$ypnwqcfpq1+3ab1saqwuvcb-^17g=h@u=(t(b)uga+
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '0.0.0.0'
-    'auraapptest.herokuapp.com',
-    '127.0.0.1'
+    '*'
 ]
 
 
