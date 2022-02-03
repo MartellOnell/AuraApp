@@ -1,0 +1,9 @@
+{% extends 'layouts/base.html' %} {% load static %}
+{% block content %}
+    <section>
+        {% if form.errors %}
+            <p>username and password didn't match</p>
+        {% endif %}
+        <form action="{% url 'users:login' %}" method="post"></form>
+    </section>
+{% endblock %}
