@@ -20,13 +20,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-th%*wv1$ypnwqcfpq1+3ab1saqwuvcb-^17g=h@u=(t(b)uga+'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = int(os.getenv('DEBUG'))
 
 ALLOWED_HOSTS = [
-    '*'
+    'www.pylearn.win',
+    'pylearn.win'
 ]
 
 
@@ -128,7 +129,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 #statics collect
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = '/home/AuraApp/static/'
 
 STATICFILES_FINDERS = (
  

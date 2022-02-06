@@ -1,1 +1,0 @@
-web: gunicorn auraApp.wsgi --log-file -
